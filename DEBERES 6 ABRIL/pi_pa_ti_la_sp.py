@@ -1,6 +1,6 @@
 # coding:utf-8
 # Possibilitats: PE, PA, TI, LA, SP
-# Total 9: 5 empat, 20 guanyador
+# Total 9: 3 empat, 6 guanyador
 # jugador1 humà
 # jugador2 machine
 
@@ -8,7 +8,6 @@ from random import randint
 
 #Jugador humà
 jugador1=raw_input("Pon la jugada (PE/PA/TI/LA/SP):")
-
 
 #Jugador machine
 aleatori=randint(1,5)
@@ -25,18 +24,17 @@ if (aleatori==4):
 if (aleatori==5):
     jugador2="SP"
 
-print ("Mi jugada es:", jugador 2)
-
-# Empat (5 combinacions)
+# Empat (3 combinacions)
 if (jugador1==jugador2):
-	print "Empate"
- # 20 combinacions
-	# Guanya jugador1 (12 combinacions)     
-if 	(jugador1=="PI")and((jugador2=="LA")or(jugador2=="TI")or
-	(jugador1=="PA")and((jugador2=="PI")or(jugador2=="SP")or
-	(jugador1=="TI")and((jugador2=="PA")or(jugador2=="SP")or
-	(jugador1=="LA")and((jugador2=="PI"or(jugador2=="TI")or
-		):
-		print ("Gana jugador1")
-else: # Guanya jugador2 (3 combinacions)
-	print ("Has perdido !!")
+	print ("Empate")
+else:
+# 6 combinacions
+# Guanya jugador1 (3 combinacions)     
+	if (((jugador1=="PI") and (jugador2=="TI" or jugador2=="LA"))or
+		((jugador1=="PA") and (jugador2=="PI" or jugador2=="SP"))or
+		((jugador1=="TI") and (jugador2=="PA" or jugador2=="LA"))or
+		((jugador1=="LA") and (jugador2=="PA" or jugador2=="SP"))or
+		((jugador1=="SP") and (jugador2=="PI" or jugador2=="TI"))):
+			print ("Has ganado !!!")
+	else: # Guanya jugador2 (3 combinacions)
+			print ("Has perdido, vuelve a intentarlo")
