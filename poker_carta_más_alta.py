@@ -4,10 +4,10 @@
 #Las cartas tienen un palo: corazones, picas, treboles, diamantes (total de 4).
 from random import randint
 #Generamos la tirada de jugador 1 (coje una carta aleatoria).
-j1num=randint(1,13)
+j1num=randint(2,14)
 j1pal=randint(1,4)
 #Generamos la tirada de jugador 2 (coje una carta aleatoria).
-j2num=randint(1,13)
+j2num=randint(2,14)
 j2pal=randint(1,4)
 
 while(sortir==False):
@@ -19,6 +19,8 @@ while(sortir==False):
 		numero1="Q"
 	if (j1num==13):
 		numero1="K"
+	if (j1num==14):
+		numero1="A"
 
 	if (j2pal==1):
 		numero1=("Corazones")
@@ -36,7 +38,9 @@ while(sortir==False):
 		numero2=("Q")
 	if (j2num==13):
 		numero2=("K")
-
+	if (j2num==14):
+		numero1="A"
+		
 	if (j2pal==1):
 		pal=("Corazones")
 	if (j2pal==2):
