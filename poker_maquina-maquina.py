@@ -1,6 +1,6 @@
-# !/usr/bin/python
+# !/bin/bash
 # -*-coding: utf-8-*-
-#Las cartas tienen un Nª: A,2-10-J-Q,K (total 13).
+#Las cartas tienen un Nª: A,2-10,J,Q,K (total 13).
 #Las cartas tienen un palo: corazones, picas, treboles, diamantes (total de 4).
 from random import randint
 #Generamos la tirada de jugador 1 (coje una carta aleatoria).
