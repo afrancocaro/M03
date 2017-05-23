@@ -12,17 +12,17 @@ jugador1=raw_input("Pon la jugada (PE/PA/TI/LA/SP):")
 #Jugador machine
 aleatori=randint(1,5)
 if (aleatori==1):
-	jugador2="PI"
+	jugador2="PE"
 if (aleatori==2):
 	jugador2="PA"
 if (aleatori==3):
 	jugador2="TI"
 if (aleatori==3):
-    jugador2="TI"
+    	jugador2="TI"
 if (aleatori==4):
-    jugador2="LA"
+   	jugador2="LA"
 if (aleatori==5):
-    jugador2="SP"
+    	jugador2="SP"
 
 # Empat (3 combinacions)
 if (jugador1==jugador2):
