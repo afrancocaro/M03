@@ -17,8 +17,6 @@ if (aleatori==2):
 	jugador2="PA"
 if (aleatori==3):
 	jugador2="TI"
-if (aleatori==3):
-    	jugador2="TI"
 if (aleatori==4):
    	jugador2="LA"
 if (aleatori==5):
