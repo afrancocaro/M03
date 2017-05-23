@@ -12,7 +12,7 @@ jugador1=raw_input("Pon la jugada (PE/PA/TI/LA/SP):")
 #Jugador machine
 aleatori=randint(1,5)
 if (aleatori==1):
-	jugador2="PE"
+	jugador2="PI"
 if (aleatori==2):
 	jugador2="PA"
 if (aleatori==3):
