@@ -16,7 +16,7 @@ for root, dirs, files in os.walk(path_to_explore):
         print(name_path) ,
         print os.stat(name_path).st_size
         total_size=total_size+os.stat(name_path).st_size
-        permissions = start.S_IMODE ( os.stat (name_path).st_mode)
+        permissions=start.S_IMODE ( os.stat (name_path).st_mode)
         #Muestra los archivos que són diferentes a 0, que son inseguros.
 		if(permissions<>0):
 			print oct(permissions)
@@ -26,7 +26,7 @@ for root, dirs, files in os.walk(path_to_explore):
         print(name_path) ,
         print os.stat(name_path).st_size
         total_size=total_size+os.stat(name_path).st_size
-        permissions = start.S_IMODE ( os.stat (name_path).st_mode )
+        permissions=start.S_IMODE ( os.stat (name_path).st_mode )
         #Muestra los directorios que són diferentes a 0, que son inseguros.
         print oct (permissions),
         if(permissions<>0):
