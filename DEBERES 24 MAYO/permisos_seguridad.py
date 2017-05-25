@@ -1,6 +1,6 @@
 #! /usr/bin/python
 # coding:utf-8
-
+#Muestra lo que pesa cada archivo y directorio.
 import os
 import stat
 
@@ -9,7 +9,7 @@ path_to_explore="/home/guest/Documentos/prueba"
 
 total_size=0
 
-# Mostrem ruta de tot
+# Mostremos ruta de todo
 for root, dirs, files in os.walk(path_to_explore):
     for name in files:
 		name_path=os.path.join(root, name)
@@ -17,7 +17,7 @@ for root, dirs, files in os.walk(path_to_explore):
         print os.stat(name_path).st_size
         total_size=total_size+os.stat(name_path).st_size
         permissions=start.S_IMODE ( os.stat (name_path).st_mode)
-        #Muestra los archivos que són diferentes a 0, que son inseguros.
+#Muestra los archivos que són diferentes a 0, que son inseguros.
 		if(permissions<>0):
 			print oct(permissions)
 
@@ -27,7 +27,7 @@ for root, dirs, files in os.walk(path_to_explore):
         print os.stat(name_path).st_size
         total_size=total_size+os.stat(name_path).st_size
         permissions=start.S_IMODE ( os.stat (name_path).st_mode )
-        #Muestra los directorios que són diferentes a 0, que son inseguros.
+#Muestra los directorios que són diferentes a 0, que son inseguros.
         print oct (permissions),
         if(permissions<>0):
 				print oct(permissions)
